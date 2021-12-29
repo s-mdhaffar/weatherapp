@@ -4,22 +4,22 @@ import WeatherApi from './Components/WeatherApi';
 import axios from 'axios'
 
 function App() {
-  const [weather, setWeather] = useState()
-  const [loading, setLoading] = useState(true)
+  // const [weather, setWeather] = useState()
+  // const [loading, setLoading] = useState(true)
 
-  useEffect(() => {
-     const fetchData=async()=>{
-      try {
-  const res= await axios.get("https://jsonplaceholder.typicode.com/users")
-  console.log(res)
-  setWeather(res.data)
-      } catch (error) {
+  // useEffect(() => {
+  //    const fetchData=async()=>{
+  //     try {
+  // const res= await axios.get("https://jsonplaceholder.typicode.com/users")
+  // console.log(res)
+  // setWeather(res.data)
+  //     } catch (error) {
           
-      }
-     }
-     fetchData()
-     setLoading(false)
-         }, [])
+  //     }
+  //    }
+  //    fetchData()
+  //    setLoading(false)
+  //        }, [])
   return (
     <div className="App">
       {/* <h1>Hello World</h1>
